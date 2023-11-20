@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;200;300;400;500;600;700;800;900&family=Tilt+Prism&display=swap');
+
+
+
+
+.navbar-top {
+    position: sticky;
+    top: 0;
+    height: 45px;
+    background-color: #e9a779;
+    z-index: 100;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu {
+    display: flex;
+    align-items: flex-end;
+    gap: 0.3rem;
+}
+
+.navbar-top img {
+    max-width: 5rem;
+    height: auto;
+}
+
+.menu img{
+    cursor: pointer;
+}
+
+.menu-button{
+    height: fit-content;
+    font-family: 'Encode Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: -0.2px;
+    color: rgb(250, 242, 242) !important;
+
+    display: flex;
+    flex-direction: row-reverse;
+    padding-bottom: 0.25rem;
+}
+
+.menu-item{
+    background-color: #e9a779;
+}
+
+.avatar{
+    display: flex;
+    align-items: flex-end;
+    gap: 0.6rem;
+}
+
+.avatar img {
+    width: 2rem; 
+    height: auto; 
+    border-radius: 45%;
+  }
+
+.message-button{
+    padding-bottom: 0;
+    align-self:baseline;
+}
+
+.navbar-bottom {
+    position: fixed;
+    bottom: 0;
+    padding: 0;
+    height: 70px;
+    z-index: 100;
+
+    display: flex;
+    flex-direction: column;
+
+    border-top-width: 1px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-color: #DEE1E6FF;
+    border-style: solid;
+}
+
+.navbar-bottom-up {
+    height: 40px;
+    padding: 0 7rem;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.kvk-sign {
+    display: flex;
+    align-items: flex-end;
+    gap: 0.3rem;
+}
+
+.kvk-sign img {
+    max-width: 5rem;
+    height: auto;
+}
+
+.icons img {
+    max-width: 12%;
+    width: auto;
+}
+
+
+.kvk-trademark {
+    font-family: Encode Sans, Condensed;
+    /* Body */
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #565D6DFF;
+    /* neutral-600 */
+    /* align-self: center; */
+    padding: 0.3rem;
+}
+
+.navbar-bottom-down {
+    height: 40px;
+    background: linear-gradient(to right, #aa418c, #ff9300);
+}
+
+.icon-set {
+    display: flex;
+    align-items: center;
+}
+
+.nav-button {
+    height: fit-content;
+    background: #255292FF;
+    font-family: 'Encode Sans', sans-serif;
+    /* Body */
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -0.2px;
+    color: rgb(250, 242, 242) !important;
+
+    border: none;
+    border-radius: 4px;
+    /* border-m */
+}
+
+.nav-button:hover {
+    background: rgb(4, 41, 92);
+}
+
+.nav-button:hover:active {
+    background: #255292FF;
+}

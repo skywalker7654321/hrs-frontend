@@ -1,0 +1,71 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
+<!-- * * * * * * * to get started with your project! * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+<mat-toolbar class="navbar-top">
+
+  <div class="menu">
+    <img routerLink="/startpage" src="assets/kvk-logo.png" alt="Kvk logo image" title="Terug naar homepagina">
+    <button mat-button [matMenuTriggerFor]="menu" class="menu-button">
+      <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="expand_more"></mat-icon>
+      <span>Menu</span>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item class="menu-item">Item 1</button>
+      <button mat-menu-item class="menu-item">Item 2</button>
+    </mat-menu>
+  </div>
+
+  <div class="avatar">
+    <img src="assets/jessie.jpeg">
+    <button mat-button class="menu-button message-button" matBadge="7"  matBadgeSize="small" matBadgeColor="warn">Bericht</button>
+    <button mat-button class="nav-button">Uitloggen</button>
+  </div>
+</mat-toolbar>
+
+<!-- Link to other components -->
+
+<button mat-raised-button routerLink="startpage">Shortcuts(to be removed): homepage</button>
+<button mat-raised-button routerLink="rechtsvorm">Rechtsvorm</button>
+<button mat-raised-button routerLink="inschrijvendelen">Inshcrijvendelen...</button>
+<button mat-raised-button style="margin-left: 5rem;" (click)="openDialogOnderneming('300ms', '0')">Eenmaanszaak (under construction)</button>
+
+<div>
+  <router-outlet></router-outlet>
+</div>
+
+
+<mat-toolbar class="navbar-bottom">
+
+  <mat-toolbar class="navbar-bottom-up">
+
+    <div class="kvk-sign">
+      <img src="assets/kvk-logo.png" alt="Kvk logo image">
+      <span class="kvk-trademark">© 2023 Kamer van Koophandel</span>
+    </div>
+
+    <div class="icon-set">
+      <button class="nav-button" mat-button>Dashboard</button>
+
+    </div>
+
+  </mat-toolbar>
+
+  <mat-toolbar class="navbar-bottom-down"></mat-toolbar>
+
+</mat-toolbar>
+
+
+
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->

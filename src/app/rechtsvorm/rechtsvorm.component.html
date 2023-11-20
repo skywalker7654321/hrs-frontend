@@ -1,0 +1,51 @@
+<div class="rechtsvorm-container">
+
+    <span class="welcome-message">Met welke rechtsvorm wil je het gaan inschrijven?</span>
+
+    <div class="tile-container">
+
+        <div class="tile">
+            <img src="assets/eenmanszaak.jpeg">
+            <span>Van een dergelijk bedrijf is slechts één persoon de eigenaar.</span>
+            <button routerLink="/inschrijvendelen">Eenmanszaak</button>
+        </div>
+
+        <div class="tile">
+            <img src="assets/bv.jpeg">
+            <span>Bij deze variant is het kapitaal in aandelen verdeeld. De risico's van hoofdelijke aansprakelijkheid
+                worden beperkt.</span>
+            <button>Besloten vennootschap (B.V.)</button>
+        </div>
+
+        <div class="tile">
+            <img src="assets/nv.jpeg">
+            <span>Een naamloze vennootschap is een vennootschap waarvan het kapitaal is verdeeld in aandelen. In
+                tegenstelling tot bij een bv zijn deze overdraagbaar. </span>
+            <button>Naamloze vennootschap (NV.)</button>
+        </div>
+    </div>
+
+
+
+    <div class="datum-ingang-container">
+        <div class="datum-input">
+
+            <mat-form-field>
+                <mat-label>Kies datum ingang rechtsvorm</mat-label>
+                <mat-select>
+                </mat-select>
+                <mat-hint>MM/DD/YY</mat-hint>
+            </mat-form-field>
+
+            <button>
+                <mat-icon fontIcon="calendar_month"></mat-icon>
+            </button>
+
+        </div>
+
+        <button routerLink="/inschrijvendelen" class="verder-button">
+            <span>Verder</span>
+            <mat-icon fontIcon="arrow_forward"></mat-icon>
+        </button>
+    </div>
+</div>

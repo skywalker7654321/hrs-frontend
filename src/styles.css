@@ -1,0 +1,25 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;200;300;400;500;600;700;800;900&family=Tilt+Prism&display=swap');
+html, body { height: 100%; }
+/* body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; } */
+
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Encode Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -0.2px;
+  }

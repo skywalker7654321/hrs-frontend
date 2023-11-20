@@ -1,0 +1,142 @@
+@use '@angular/material' as mat;
+// @use 'src/app/modules/dwp/components/menu/menu-container/menu-container-theme.component.scss' as
+//   menu-container;
+@include mat.core;
+
+$kvk-paars: #aa418c;
+$kvk-blauw: #00526e;
+$kvk-oranje: #ff9300;
+$kvk-rood: #bc3f38;
+
+$kvk-primary-palette: (
+  50: #f3e4ee,
+  100: #e2bbd5,
+  200: #cf8eba,
+  300: #ba629f,
+  400: #aa418c,
+  500: #99227b,
+  600: #8e1d76,
+  700: #7e166f,
+  800: #6f1167,
+  900: #57045a,
+  contrast: (
+    50: #000,
+    100: #000,
+    200: #000,
+    300: #000,
+    400: #000,
+    500: #fff,
+    600: #fff,
+    700: #fff,
+    800: #fff,
+    900: #fff,
+  ),
+);
+
+$kvk-secondary-palette: (
+  50: #d1f1ff,
+  100: #add9ef,
+  200: #8bbbd6,
+  300: #669ebc,
+  400: #4a89a8,
+  500: #287495,
+  600: #176684,
+  700: #00536e,
+  800: #004059,
+  900: #002b41,
+  contrast: (
+    50: #000,
+    100: #000,
+    200: #000,
+    300: #000,
+    400: #000,
+    500: #fff,
+    600: #fff,
+    700: #fff,
+    800: #fff,
+    900: #fff,
+  ),
+);
+
+$kvk-orange-palette: (
+  50: #fff3e0,
+  100: #ffdfb1,
+  200: #ffca7f,
+  300: #ffb54c,
+  400: #ffa425,
+  500: #ff9500,
+  600: #fb8901,
+  700: #f57902,
+  800: #ef6902,
+  900: #e64d03,
+  contrast: (
+    50: #000,
+    100: #000,
+    200: #000,
+    300: #000,
+    400: #000,
+    500: #fff,
+    600: #fff,
+    700: #fff,
+    800: #fff,
+    900: #fff,
+  ),
+);
+
+$kvk-red-palette: (
+  50: #fdecef,
+  100: #fad0d5,
+  200: #e8a0a0,
+  300: #dc7d7c,
+  400: #e6625d,
+  500: #ea5547,
+  600: #dc4d45,
+  700: #c9443e,
+  800: #bc3f38,
+  900: #ac372e,
+  contrast: (
+    50: #000,
+    100: #000,
+    200: #000,
+    300: #000,
+    400: #000,
+    500: #fff,
+    600: #fff,
+    700: #fff,
+    800: #fff,
+    900: #fff,
+  ),
+);
+
+$kvk-primary: mat.define-palette($kvk-primary-palette, 500);
+$kvk-accent: mat.define-palette($kvk-secondary-palette, 700);
+$kvk-orange: mat.define-palette($kvk-orange-palette, 500);
+$kvk-warn: mat.define-palette($kvk-red-palette, 800);
+
+$kvk-theme: mat.define-light-theme(
+  (
+    color: (
+      primary: $kvk-primary,
+      accent: $kvk-accent,
+      // The "warn" palette is optional and defaults to red if not specified.
+      warn: $kvk-warn,
+    ),
+    typography: mat.define-typography-config(),
+    density: 0,
+  )
+);
+
+@include mat.all-component-themes($kvk-theme);
+// @include menu-container.theme($kvk-theme);
+
+// In some cases the standard alpha (0.6) is too light making it appear as if something is disabled. This could be confusing
+// for the user. This is undesirable so it was decided in consultation with the UX designer to deviate from this.
+.mat-mdc-dialog-content {
+  color: rgba(0 0 0 / 80%) !important;
+}
+
+// According to the M2 spec, the button area is placed closer to the edge than the content.
+// In consultation with the UX designer it is decided to align the mat-dialog-actions with the content of the dialog
+.mat-mdc-dialog-actions {
+  padding: 0 24px 24px !important;
+}

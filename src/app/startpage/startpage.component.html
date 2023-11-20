@@ -1,0 +1,19 @@
+<!-- 4个容器, 分别对应竖排的4个元素 -->
+<div class="start-button-container">
+    <span class="welcome-message">Welkom terug, Jessie!</span>
+
+    <button routerLink="/rechtsvorm" class="choice-button">Inschrijven</button>
+    <button class="choice-button">
+        <span>Wijzigen</span>
+        <mat-icon fontIcon="expand_more"></mat-icon>
+    </button>
+
+    <div class="search-kvk-number-container">
+        <mat-form-field class="form-field">
+            <mat-label>Kvk nummer</mat-label>
+            <input matInput type="text">
+            <mat-icon matSuffix color="accent">mode_edit</mat-icon>
+        </mat-form-field>
+        <button class="choice-button search-button">Zoek</button>
+    </div>
+</div>

@@ -1,0 +1,147 @@
+.rechtsvorm-container {
+    margin: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+}
+
+.welcome-message {
+    font-family: Encode Sans, Condensed;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 30px;
+    color: #255292FF;
+}
+
+/* Middle part */
+
+.tile-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+}
+
+.tile {
+    width: 320px;
+    height: 320px;
+
+    border-style: solid;
+    border-radius: 8px;
+    border-color: #BDC1CAFF;
+    border-width: 0.5px;
+    box-shadow: 0px 4px 9px #a0aec8, 0px 0px 2px #a0aec8;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.tile img {
+    width: 320px;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+.tile span {
+    width: 270px;
+    height: 60px;
+    text-align: center;
+    color: #323743FF;
+}
+
+.tile button {
+    height: 36px;
+    padding: 0 12px;
+    
+    /* display: flex;
+    align-items: center; */
+
+    font-family: Encode Sans, Condensed;
+    font-size: 14px;
+    font-weight: 400px;
+    line-height: 22px;
+
+    background: #255292FF;
+    color: white;
+
+    border: none;
+    border-radius: 4px;
+}
+
+.tile button:hover {
+    background: #1E447AFF;
+}
+
+.tile button:active {
+    background: #183660FF;
+}
+
+
+/* Ingangsdatum */
+
+.datum-ingang-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+    width: 500px;
+}
+
+.datum-input {
+    display: flex;
+}
+
+.datum-input mat-form-field {
+    height: 72px;
+    width: 300px;
+    border-top-right-radius: 0;
+}
+
+.datum-ingang-container button {
+    height: 50px;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+
+    font-family: Encode Sans, Condensed;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 30px;
+    color: white;
+
+    background: #255292FF;
+    border: none;
+    /* border-radius: 6px; */
+    box-shadow: 2px 2px 5px #5f6774, 0px 0px 1px #171a1f;
+}
+
+.datum-input button {
+    border-radius: 0 6px 6px 0;
+}
+
+
+.datum-input mat-label {
+    font-family: Encode Sans;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: -0.1px;
+}
+
+.datum-input mat-hint{
+    color: rgb(86, 84, 84);
+}
+
+.verder-button {
+    border-radius: 6px;
+}
+
+.verder-button:hover {
+    background: #1E447AFF !important;
+}
+
+.verder-button:active {
+    background: #183660FF !important;
+}
