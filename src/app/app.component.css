@@ -46,6 +46,14 @@
     background-color: #e9a779;
 }
 
+.temporaryShortcuts button{
+    font-family: 'Encode Sans', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 400;
+    letter-spacing: -0.2px;
+    color: white;
+}
+
 .avatar{
     display: flex;
     align-items: flex-end;

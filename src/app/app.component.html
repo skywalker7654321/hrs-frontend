@@ -21,19 +21,24 @@
     </mat-menu>
   </div>
 
+  <div class="temporaryShortcuts">
+    <button mat-stroked-button routerLink="startpage">Shortcuts(to be removed / WIP): homepage</button>
+    <button mat-stroked-button routerLink="rechtsvorm">Rechtsvorm</button>
+    <button mat-stroked-button routerLink="inschrijvendelen">Inshcrijvendelen...</button>
+    <button mat-stroked-button style="margin-left: 2rem;" (click)="openDialogOnderneming('300ms', '0')">Eenmaanszaak
+      (test)</button>
+
+  </div>
+
   <div class="avatar">
     <img src="assets/jessie.jpeg">
-    <button mat-button class="menu-button message-button" matBadge="7"  matBadgeSize="small" matBadgeColor="warn">Bericht</button>
+    <button mat-button class="menu-button message-button" matBadge="7" matBadgeSize="small"
+      matBadgeColor="warn">Bericht</button>
     <button mat-button class="nav-button">Uitloggen</button>
   </div>
 </mat-toolbar>
 
 <!-- Link to other components -->
-
-<button mat-raised-button routerLink="startpage">Shortcuts(to be removed): homepage</button>
-<button mat-raised-button routerLink="rechtsvorm">Rechtsvorm</button>
-<button mat-raised-button routerLink="inschrijvendelen">Inshcrijvendelen...</button>
-<button mat-raised-button style="margin-left: 5rem;" (click)="openDialogOnderneming('300ms', '0')">Eenmaanszaak (under construction)</button>
 
 <div>
   <router-outlet></router-outlet>
